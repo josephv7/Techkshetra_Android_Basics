@@ -28,6 +28,7 @@ public class Splash extends AppCompatActivity {
 //                Toast.makeText(Splash.this, "Button Clicked!", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(Splash.this,MainActivity.class);
+                intent.putExtra("data","data1234");
                 startActivity(intent);
                 finish();
 
