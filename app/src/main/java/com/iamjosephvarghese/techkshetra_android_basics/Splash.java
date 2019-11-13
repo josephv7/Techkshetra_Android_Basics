@@ -2,6 +2,7 @@ package com.iamjosephvarghese.techkshetra_android_basics;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,8 +25,11 @@ public class Splash extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                Toast.makeText(Splash.this, "Button Clicked!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Splash.this, "Button Clicked!", Toast.LENGTH_SHORT).show();
 
+                Intent intent = new Intent(Splash.this,MainActivity.class);
+                startActivity(intent);
+                finish();
 
             }
         });
